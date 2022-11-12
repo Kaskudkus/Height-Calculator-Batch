@@ -15,6 +15,7 @@ goto cmorf
     echo 2. Feet
     echo.
     echo 3. Exit
+	echo.
     set /p choose=Choose: 
         :: Yandere Simulator moment
         if %choose%==1 goto cm
