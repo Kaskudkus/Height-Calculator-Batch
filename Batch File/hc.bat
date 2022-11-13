@@ -39,7 +39,7 @@ goto Menu
     echo.
     echo 4. Exit
 	echo.
-    choice /c 12345
+    choice /c 1234
         :: Fresh new code
         if %errorlevel% equ 1 goto cm
         if %errorlevel% equ 2 goto f
