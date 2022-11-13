@@ -1,6 +1,5 @@
 @echo off
 color 2
-mode con:cols=80 lines=100
 goto Menu
 
 :: Boredom Gaming
@@ -9,10 +8,10 @@ goto Menu
     echo.
     echo.
     echo.
-    echo Kaskudek's
-    echo                           Height Calculator
-    echo                     Made with Visual Studio Code
-    echo                           on SupRize Engine
+    echo        Kaskudek's
+    echo     Height Calculator
+    echo Made with Visual Studio Code
+    echo     on SupRize Engine
     echo.
     echo.
     echo.
@@ -38,17 +37,49 @@ goto Menu
     echo.
     echo 3. Check Your Height
     echo.
-    echo 4. Exit
+    echo 4. Credits
+    echo.
+    echo 5. Exit
 	echo.
-    choice /c 1234
+    choice /c 12345
         :: Fresh new code
         if %errorlevel% equ 1 goto cm
         if %errorlevel% equ 2 goto f
         if %errorlevel% equ 3 goto check
-        if %errorlevel% equ 4 goto exit
+        if %errorlevel% equ 4 goto Credits
+        if %errorlevel% equ 5 goto exit
 
 :exit
     exit
+
+:: Credits Function
+:Credits
+    cls
+    echo.
+    echo                           3.Exit the menu
+    echo.
+    echo Height Calculator BATCH Port
+    echo.
+    echo =========================================
+    echo.
+    echo Developers
+    echo.
+    echo 2. Kaskudek                     Coder
+    echo 3. teotm                     Game Tester
+    echo.
+    echo =========================================
+    echo.
+    echo SupRize Engine Developers
+    echo.
+    echo 2. Kaskudek                   Main Guy
+    echo.
+    echo =========================================
+    echo.
+    echo Height Calculator 2022
+    choice /c 12
+        if %errorlevel% equ 2 start https://www.youtube.com/channel/UCpkRxfWt_zcGw5C0Hu17Vkg/featured
+        if %errorlevel% equ 3 start https://www.youtube.com/channel/UCJnOkGILRMpEAgbS0A91cWQ
+rem end
 
 :: Height Check function
 :check
