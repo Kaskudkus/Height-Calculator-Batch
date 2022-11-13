@@ -1,5 +1,6 @@
 @echo off
 color 2
+mode con:cols=80 lines=100
 goto Menu
 
 :: Boredom Gaming
